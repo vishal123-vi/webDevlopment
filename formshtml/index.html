@@ -1,0 +1,108 @@
+<div class="sheet">
+<h2>Biology Section (NEET 2020 – Code E1)</h2>
+
+<div id="mcqs"></div>
+
+<div style="text-align:center;">
+  <button class="submit-btn" onclick="checkAnswers()">Submit</button>
+  <button class="reset-btn" onclick="resetAll()">Reset</button>
+</div>
+
+<div id="result"></div>
+</div>
+
+<script>
+const container = document.getElementById("mcqs");
+
+/* ✅ Correct Answers (Official NEET 2020 Set E1 – Q1 to Q25) */
+const answers = {
+  q1: "c",  q2: "a",  q3: "b",  q4: "c",  q5: "d",
+q6: "c",  q7: "d",  q8: "c",  q9: "a",  q10: "d",
+q11: "c", q12: "d", q13: "d", q14: "b", q15: "c",
+q16: "d", q17: "c", q18: "c", q19: "a", q20: "b",
+q21: "a", q22: "c", q23: "d", q24: "b", q25: "d"
+
+};
+
+/* ✅ Questions + Options */
+const questions = [
+  {q:"Which of the following is not an attribute of a population?", opts:["Sex ratio","Natality","Mortality","Species interaction"]},
+  {q:"The process of growth is maximum during:", opts:["Log phase","Lag phase","Senescence","Dormancy"]},
+  {q:"The roots that originate from the base of the stem are:", opts:["Fibrous roots","Primary roots","Prop roots","Lateral roots"]},
+  {q:"Match the following diseases with the causative organism:\nTyphoid → Salmonella\nPneumonia → Haemophilus\nFilariasis → Wuchereria\nMalaria → Plasmodium", opts:["Correct matching as above","Other combinations","",""]},
+  {q:"In which of the following techniques, the embryos are transferred to assist those females who cannot conceive?", opts:["ZIFT and IUT","GIFT and ZIFT","ICSI and ZIFT","GIFT and ICSI"]},
+  {q:"Which of the following is a secondary pollutant?", opts:["SO₂","CO","PAN","NO"]},
+  {q:"Which of the following is not a function of the skeletal system?", opts:["Production of RBC","Storage of minerals","Production of body heat","Providing support"]},
+  {q:"Which of the following is not a feature of the plasmid?", opts:["Circular DNA","Independent replication","Essential for survival","Extra-chromosomal"]},
+  {q:"Which of the following is not a connective tissue?", opts:["Bone","Cartilage","Blood","Epidermis"]},
+  {q:"Which of the following is not a characteristic of enzymes?", opts:["Proteinaceous in nature","Specific in action","Altered after reaction","Speed up reactions"]},
+  {q:"Which of the following is not a greenhouse gas?", opts:["CO₂","CH₄","O₃","SO₂"]},
+  {q:"Which of the following is not a sexually transmitted disease?", opts:["AIDS","Gonorrhea","Malaria","Syphilis"]},
+  {q:"Which of the following is not a function of the placenta?", opts:["Nutrition","Excretion","Respiration","Production of RBC"]},
+  {q:"Which of the following is not a feature of the genetic code?", opts:["Universal","Non-overlapping","Ambiguous","Degenerate"]},
+  {q:"Which of the following is not a function of the liver?", opts:["Production of bile","Storage of glycogen","Production of urea","Production of insulin"]},
+  {q:"Which of the following is not a function of the kidney?", opts:["Excretion of urea","Regulation of blood pressure","Regulation of body temperature","Regulation of water balance"]},
+  {q:"Which of the following is not a function of the pancreas?", opts:["Production of insulin","Production of glucagon","Production of bile","Production of digestive enzymes"]},
+  {q:"Which of the following is not a function of the thyroid gland?", opts:["Regulation of metabolism","Regulation of calcium levels","Regulation of blood sugar","Regulation of growth"]},
+  {q:"Which of the following is not a function of the adrenal gland?", opts:["Production of adrenaline","Regulation of blood pressure","Regulation of metabolism","Production of insulin"]},
+  {q:"Which of the following is not a function of the pituitary gland?", opts:["Regulation of growth","Regulation of metabolism","Regulation of reproduction","Regulation of digestion"]},
+  {q:"Which of the following is not a function of the hypothalamus?", opts:["Regulation of body temperature","Regulation of hunger","Regulation of thirst","Regulation of blood pressure"]},
+  {q:"Which of the following is not a function of the cerebrum?", opts:["Control of voluntary actions","Control of intelligence","Control of memory","Control of balance"]},
+  {q:"Which of the following is not a function of the cerebellum?", opts:["Control of balance","Control of posture","Control of voluntary actions","Control of coordination"]},
+  {q:"Which of the following is not a function of the medulla oblongata?", opts:["Control of respiration","Control of heartbeat","Control of digestion","Control of voluntary actions"]},
+  {q:"Which of the following is not a function of the spinal cord?", opts:["Transmission of impulses","Control of reflexes","Control of voluntary actions","Control of balance"]}
+];
+
+/* ✅ Render Questions */
+questions.forEach((qObj, i) => {
+  let qHtml = `<div class="question">
+    <div class="qno">Q${i+1}</div>
+    <div class="qtext">${qObj.q}</div>
+    <div class="options">`;
+
+  ["a","b","c","d"].forEach((val, idx) => {
+    if(qObj.opts[idx]) {
+      qHtml += `
+        <input type="radio" name="q${i+1}" id="q${i+1}${val}" value="${val}">
+        <label for="q${i+1}${val}">${String.fromCharCode(65+idx)}. ${qObj.opts[idx]}</label>`;
+    }
+  });
+
+  qHtml += `</div></div>`;
+  container.innerHTML += qHtml;
+});
+
+/* ✅ Check Answers Function */
+function checkAnswers() {
+  let score = 0;
+  let total = questions.length;
+  let resultHtml = "<h3>Result:</h3>";
+
+  questions.forEach((qObj, i) => {
+    let qNo = `q${i+1}`;
+    let selected = document.querySelector(`input[name="${qNo}"]:checked`);
+    let correct = answers[qNo];
+
+    if (selected) {
+      if (selected.value === correct) {
+        score++;
+        resultHtml += `<p style="color:green;"><b>Q${i+1}:</b> ✅ Correct (Your answer: ${selected.value.toUpperCase()})</p>`;
+      } else {
+        resultHtml += `<p style="color:red;"><b>Q${i+1}:</b> ❌ Wrong (Your answer: ${selected.value.toUpperCase()}, Correct: ${correct.toUpperCase()})</p>`;
+      }
+    } else {
+      resultHtml += `<p style="color:orange;"><b>Q${i+1}:</b> ⚠️ Not Attempted (Correct: ${correct.toUpperCase()})</p>`;
+    }
+  });
+
+  resultHtml += `<h3>Final Score: ${score} / ${total}</h3>`;
+  document.getElementById("result").innerHTML = resultHtml;
+}
+
+/* ✅ Reset Function */
+function resetAll() {
+  document.querySelectorAll("input[type=radio]").forEach(r => r.checked = false);
+  document.getElementById("result").innerHTML = "";
+}
+</script>
+

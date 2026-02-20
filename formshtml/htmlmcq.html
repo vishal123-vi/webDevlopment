@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>50 MCQ Answer Sheet</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.sheet {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.qno {
+  width: 50px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  border: 1px solid #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.correct {
+  background: #4caf50 !important;
+  color: white;
+}
+
+.wrong {
+  background: #ff4d4d !important;
+  color: white;
+}
+
+button {
+  padding: 10px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #2196f3;
+  color: white;
+}
+
+.reset-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+#result {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sheet">
+<h2>50 MCQ Answer Sheet</h2>
+
+<div id="mcqs"></div>
+
+<div style="text-align:center;">
+  <button class="submit-btn" onclick="checkAnswers()">Submit</button>
+  <button class="reset-btn" onclick="resetAll()">Reset</button>
+</div>
+
+<div id="result"></div>
+</div>
+
+<script>
+
+const container = document.getElementById("mcqs");
+
+/* ✅ Correct Answers (Example pattern)
+   Tum yaha apna correct answer change kar sakte ho
+   Example: q1: "a", q2: "c"
+*/
+
+const answers = {};
+
+for (let i = 1; i <= 50; i++) {
+  answers["q" + i] = "a";  // Default sabka answer A set kiya
+}
+
+for (let i = 1; i <= 50; i++) {
+  container.innerHTML += `
+  <div class="question">
+    <div class="qno">Q${i}</div>
+    <div class="options">
+      <input type="radio" name="q${i}" id="q${i}a" value="a">
+      <label for="q${i}a">A</label>
+
+      <input type="radio" name="q${i}" id="q${i}b" value="b">
+      <label for="q${i}b">B</label>
+
+      <input type="radio" name="q${i}" id="q${i}c" value="c">
+      <label for="q${i}c">C</label>
+
+      <input type="radio" name="q${i}" id="q${i}d" value="d">
+      <label for="q${i}d">D</label>
+    </div>
+  </div>
+  `;
+}
+
+function checkAnswers() {
+
+  let score = 0;
+
+  for (let i = 1; i <= 50; i++) {
+
+    const selected = document.querySelector(`input[name=q${i}]:checked`);
+    const correctAnswer = answers["q" + i];
+
+    const labels = document.querySelectorAll(`input[name=q${i}]`);
+
+    labels.forEach(input => {
+      const label = document.querySelector(`label[for=${input.id}]`);
+      label.classList.remove("correct", "wrong");
+
+      if (input.value === correctAnswer) {
+        label.classList.add("correct");
+      }
+
+      if (selected && input === selected && selected.value !== correctAnswer) {
+        label.classList.add("wrong");
+      }
+    });
+
+    if (selected && selected.value === correctAnswer) {
+      score++;
+    }
+  }
+
+  document.getElementById("result").innerHTML =
+    "Your Score: " + score + " / 50";
+}
+
+function resetAll() {
+
+  document.querySelectorAll("input[type=radio]")
+    .forEach(r => r.checked = false);
+
+  document.querySelectorAll("label")
+    .forEach(l => l.classList.remove("correct", "wrong"));
+
+  document.getElementById("result").innerHTML = "";
+}
+
+</script>
+
+</body>
+</html>
