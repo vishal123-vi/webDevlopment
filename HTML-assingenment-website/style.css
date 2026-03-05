@@ -1,0 +1,62 @@
+body {
+  background-color: lightgray;
+}
+
+header {
+  background: linear-gradient(blue, black, gray, black);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#a1 {
+  color: gold;
+  /* background-color: gold; */
+}
+.a2 {
+  color: cyan;
+  /* background-color: cyan; */
+}
+.a3 {
+  color: lightgreen;
+  /* background-color: lightgrey; */
+}
+
+.a4 {
+  color: whitesmoke;
+}
+.q1 {
+  color: white;
+  background-color: blue;
+}
+.q6 {
+  /* color: ; */
+  background-color:;
+}
+.q2 {
+  color: white;
+  background-color: blue;
+}
+.q3 {
+  color: white;
+  background-color: blue;
+}
+.q4 {
+  color: white;
+  background-color: blue;
+}
+.q5 {
+  color: white;
+  background-color: blue;
+}
+.q12 {
+  background-color: green;
+}
+#profile{
+    background-color: lightblue;
+   
+}
+
+#c1{
+  background-color: green;
+}
