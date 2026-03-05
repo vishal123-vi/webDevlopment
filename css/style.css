@@ -1,6 +1,18 @@
-*{
-     background-colour:green(241,185,237);
+body{
+    background-color:green;
+    width: 200px;
+    height: 200px;
+    border: 10px solid blck;
+    padding: 30px;
+    margin: 0 auto;
+   
 }
-.v1{
-     background-color: aqua;
+button{
+     padding: 5px 15px;
+     margin:10px 20px ;
+     background-color: rgb(2, 62, 32);
+     color: white;
+     border-radius: 10px;
+     font-weight: bold;
+
 }

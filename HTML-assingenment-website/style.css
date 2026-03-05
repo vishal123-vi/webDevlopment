@@ -4,22 +4,20 @@ body {
 
 header {
   background: linear-gradient(blue, black, gray, black);
-  color: white;
   text-align: center;
-  padding: 20px;
 }
 
 #a1 {
   color: gold;
-  /* background-color: gold; */
+  
 }
 .a2 {
   color: cyan;
-  /* background-color: cyan; */
+  
 }
 .a3 {
   color: lightgreen;
-  /* background-color: lightgrey; */
+  
 }
 
 .a4 {
@@ -27,11 +25,11 @@ header {
 }
 .q1 {
   color: white;
-  background-color: blue;
+  background-color: blue; 
+
 }
 .q6 {
-  /* color: ; */
-  background-color:;
+  color: blue;
 }
 .q2 {
   color: white;
@@ -52,11 +50,10 @@ header {
 .q12 {
   background-color: green;
 }
-#profile{
-    background-color: lightblue;
-   
+#profile {
+  background-color: lightblue;
 }
 
-#c1{
-  background-color: green;
-}
+/* #c1{
+  background-color: darkkhaki;
+}  */
