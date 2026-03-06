@@ -7,6 +7,20 @@ body{
     margin: 0 auto;
    
 }
+div{
+    background-color: whitesmoke;
+    border: 2px solid yellow;
+    
+
+}
+input{
+    width: 100;
+    padding: 10px;
+    margin-bottom: 10px;  
+    border:none;
+    border-bottom: 15px;
+
+}
 button{
      padding: 5px 15px;
      margin:10px 20px ;
@@ -15,4 +29,12 @@ button{
      border-radius: 10px;
      font-weight: bold;
 
+}
+form{
+    padding: 10px;
+    margin: 0 auto;
+
+}
+h2{
+    margin-bottom: auto;
 }
