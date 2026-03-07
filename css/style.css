@@ -10,6 +10,9 @@ body{
 div{
     background-color: whitesmoke;
     border: 2px solid yellow;
+    width: 110%;
+    margin-left: 0 auto;
+    margin: 0 auto;
     
 
 }
