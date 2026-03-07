@@ -21,7 +21,7 @@ input{
     border-bottom: 15px;
 
 }
-button{
+/* button{
      padding: 5px 15px;
      margin:10px 20px ;
      background-color: rgb(2, 62, 32);
@@ -29,6 +29,16 @@ button{
      border-radius: 10px;
      font-weight: bold;
 
+} */
+ button{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    background:green;
+    color:white;
+    border:none;
+    font-size:16px;
+    border-radius:5px;
 }
 form{
     padding: 10px;
