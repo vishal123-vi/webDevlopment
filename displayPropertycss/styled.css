@@ -1,0 +1,38 @@
+/* margin:0 or padding:0 se yehi hota hai ki bordary se sut jata jata hai  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Common class for all divs having class="a" */
+.a {
+  width: 220px;                 /* box width */
+  min-height: 60px;             /* minimum height */
+  padding: 10px;                /* inner spacing */
+  margin: 20px 0;               /* top-bottom gap */
+  box-sizing: border-box;       /* include border + padding in width */
+  border: 5px dotted #111827;   /* thick dotted border */
+  background-color: #dbeafe;    /* light blue background */
+  color: #111827;
+  
+}
+
+/* Styles for all 3 div IDs */
+#mydiv1, #mydiv2, #mydiv3 {
+  background-color: #6b7280;    /* gray background */
+  border: 3px solid #000000;    /* black border */
+  color: #ffffff;    /* white text */
+             
+}
+
+/* Styles for all 3 span IDs */
+#myspan, #myspan1, #myspan2 {
+  display: inline-block;        /* allow padding/border properly */
+  padding: 6px 10px;
+  margin-right: 6px;
+  background-color: #2563eb;    /* blue background */
+  border: 3px solid #166534;    /* green border */
+  color: #ffffff;               /* white text */
+}
+ 

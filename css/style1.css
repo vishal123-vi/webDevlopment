@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: Arial, Helvetica, sans-serif;
     background:#33af28;
 }
@@ -47,4 +47,28 @@ button{
     border:none;
     font-size:16px;
     border-radius:5px;
-}
+} */
+ #show{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px ;
+ }
+ #textshow{
+    text-shadow: 0.5px 0.5px 1px red;
+
+ }
+ #btn{
+    border: 1px solid green;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    box-shadow: 10px 10px 5px ;
+
+ }
