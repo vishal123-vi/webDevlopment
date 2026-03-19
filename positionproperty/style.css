@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    background-color: aqua;
+    position: sticky;
+    top: -10px;
+    z-index: 99;
+
+}
+.somthing{
+    border: 1px solid black;
+    background: aqua;
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+#ricrimg{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+#visitricr{
+    /* position: fixed; */
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+
+}

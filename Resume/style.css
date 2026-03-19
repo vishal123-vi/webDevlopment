@@ -300,3 +300,8 @@ p{
 .right_side .col2 br {
   margin-bottom: 4px;
 }
+
+.same-about-color {
+  color: #003147;
+  font-weight: 600;
+}
