@@ -14,14 +14,19 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
+  max-width: 2000px;
+  /* min-height: 2000px; */
+  min-height: 2000px;
+
+  /* min-height: auto; */
+  /* margin: 20px auto; */
   background: white;
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
+
 .container .left_side {
   position: relative;
   background: #003147;
@@ -190,70 +195,70 @@ body {
   background: #ffffff;
   padding: 40px;
 }
-.about{
-    margin-bottom: 50px;
+.about {
+  margin-bottom: 50px;
 }
-.a :last-child{
-    margin-bottom: 0;
+.a :last-child {
+  margin-bottom: 0;
 }
 
-.title2{
-    color: #003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid #003147;
-    padding-bottom: 10px;
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #003147;
+  padding-bottom: 10px;
 }
-p{
-    color: #555;
-    line-height: 1.6;
-    font-size: 14px;
+p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 14px;
 }
-.about{
-    margin-bottom: 40px;
+.about {
+  margin-bottom: 40px;
 }
-.about p{
-    margin-bottom: 15px;
+.about p {
+  margin-bottom: 15px;
 }
-.about .box{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+.about .box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
 }
-.about .box:last-child{
-    border-bottom: none;
-    margin-bottom: 0;
+.about .box:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
-.year_company{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 8px;
+.year_company {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
 }
-.year_company h4{
-    color: #003147;
-    font-weight: 600;
-    font-size: 15px;
+.year_company h4 {
+  color: #003147;
+  font-weight: 600;
+  font-size: 15px;
 }
-.year_company h5{
-    color: #999;
-    font-weight: 400;
-    font-size: 12px;
+.year_company h5 {
+  color: #999;
+  font-weight: 400;
+  font-size: 12px;
 }
-.about .box .text h4{
-    color: #003147;
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 5px;
+.about .box .text h4 {
+  color: #003147;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
-.about .box .text p{
-    color: #666;
-    font-weight: 400;
+.about .box .text p {
+  color: #666;
+  font-weight: 400;
 }
 
 .right_side .section {
