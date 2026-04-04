@@ -138,7 +138,6 @@ main {
     font-size: 14px;
     background: #fff;
 }
-
 .field-group input:focus,
 .field-group select:focus {
     outline: 2px solid #9cc2ff;
