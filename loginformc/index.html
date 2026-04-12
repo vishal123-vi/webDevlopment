@@ -21,19 +21,24 @@
         width: 100%;
         border-radius: 12px;
       }
+      body{
+        background-image: url(image.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
     </style>
   </head>
   <body class="">
-    <div
-      class="d-flex justify-content-center align-items-center vh-100"
-    >
-      <div class="login-card p-xxl-5 shadow">
+    <div class="d-flex justify-content-center align-items-center vh-100 ">
+      <div class="login-card p-xxl-5 shadow bg-light">
         <h2 class="text-center text-danger">Welcome Back</h2>
-        <p class="text-center">Login to your Cravings account</p>
+        <p class="text-center text-black">Login to your Cravings account</p>
         <!-- Email -->
         <div class="mb-3">
           <label class="fw-bold">Email</label>
-          <input type="email" class="form-control" placeholder="email " />
+          <input type="email" class="form-control text-light" placeholder="email " />
         </div>
         <!-- password -->
         <div class="mb-3">
