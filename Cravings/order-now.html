@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Now</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .search-inner {
+        width: min(100%, 900px);
+      }
+
+      .restaurant-card {
+        width: min(100%, 340px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-danger px-lg-5 sticky-top">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Logo -->
+        <img
+          class="logo-img"
+          src="images/logo.png"
+          alt="Craving logo"
+          style="width: 120px"
+        />
+
+        <!-- Links -->
+        <div class="d-flex align-items-center gap-4">
+          <a class="fw-bold fs-5 text-white text-decoration-none" href="../Cravings/login.html"
+            >Login</a
+          >
+          <a class="fw-bold fs-5 text-danger bg-light text-decoration-none  border border-2 rounded-4 fs-4" href="../Cravings/registration.html"
+            >Register</a
+          >
+        </div>
+      </div>
+    </nav>
+
+      <div class="search-box w-100 mx-auto mt-5">
+        <div class="d-flex search-inner align-items-center border px-2 bg-white rounded-4">
+          <!-- icon -->
+          <span class="bg-white text-dark border-0">
+            <i class="bi bi-search fs-2"></i>
+          </span>
+
+          <!-- input -->
+          <input
+            type="text"
+            class="form-control form-control-lg py-4 fw-bold border-0 shadow-none"
+            placeholder="Search restaurants or dishes..."
+          />
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+      <h1 class="fw-bold fs-3">Featured Restaurants</h1>
+      <h4>3 restaurants available</h4>
+    </div>
+
+    <!--  -->
+    <div class="d-flex flex-wrap gap-4 justify-content-center px-lg-5 mt-3">
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu1.png" alt="" />
+        <div class="p-4 p-5">
+          <h1>Under The Mango Tree</h1>
+          <p class="fw-bold mt-3 fs-6">
+            Enjoy the thrill of grill and barbecue at Under The <br />
+            Mango Tree restaurant at Jehan Numa Palace, <br />
+            Bhopal. Head here now!
+          </p>
+          <div>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">India</span>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">Chinese</span>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">Italian</span>
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3">Explore Menu</button>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu2.png" alt="" />
+        <div class="p-4 p-xxl-5">
+          <h1>Raj darbar</h1>
+          <p class="fw-bold mt-3 fs-6">
+            Raj Darbar is a one-of-a-kind Indian restaurant <br />
+            that offers a unique dining experience for families <br />
+            and friends with a dhaba-style theme.
+          </p>
+          <div>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >India</span
+            >
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Chinese</span
+            >
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Italian</span
+            >
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3">Explore Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu3.png" alt="" />
+        <div class="p-4 p-xxl-5">
+          <h1>Countryside Culture</h1>
+          <p class="fw-bold mt-3 d-sm-inline fs-6">
+            A hidden gem away from the city, offering lush <br />
+            green meadows and peaceful walking paths for <br />
+            relaxation.
+          </p>
+          <div>
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >India</span
+            >
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Chinese</span
+            >
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Italian</span
+            >
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3 fw-bold">
+              Explore Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+     <!--  -->
+    <div class="d-flex flex-wrap gap-4 justify-content-center px-lg-5 mt-3">
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu1.png" alt="" />
+        <div class="p-4 p-5">
+          <h1>Under The Mango Tree</h1>
+          <p class="fw-bold mt-3 fs-6">
+            Enjoy the thrill of grill and barbecue at Under The <br />
+            Mango Tree restaurant at Jehan Numa Palace, <br />
+            Bhopal. Head here now!
+          </p>
+          <div>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">India</span>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">Chinese</span>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fs-6">Italian</span>
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3">Explore Menu</button>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu2.png" alt="" />
+        <div class="p-4 p-xxl-5">
+          <h1>Raj darbar</h1>
+          <p class="fw-bold mt-3 fs-6">
+            Raj Darbar is a one-of-a-kind Indian restaurant <br />
+            that offers a unique dining experience for families <br />
+            and friends with a dhaba-style theme.
+          </p>
+          <div>
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >India</span
+            >
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Chinese</span
+            >
+            <span class="fw-bold bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Italian</span
+            >
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3">Explore Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="shadow bg-light mt-5 rounded-3 overflow-hidden hover-card restaurant-card">
+        <img class="custom-img" src="images/exploremenu3.png" alt="" />
+        <div class="p-4 p-xxl-5">
+          <h1>Countryside Culture</h1>
+          <p class="fw-bold mt-3 d-sm-inline fs-6">
+            A hidden gem away from the city, offering lush <br />
+            green meadows and peaceful walking paths for <br />
+            relaxation.
+          </p>
+          <div>
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >India</span
+            >
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Chinese</span
+            >
+            <span class=" bg-light text-dark px-4 py-2 fw-bold fs-6"
+              >Italian</span
+            >
+          </div>
+          <div>
+            <button class="btn btn-danger w-100 py-3 mt-3 fw-bold">
+              Explore Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <!-- top text -->
+      <div class="container">
+        <p
+          class="text-center mb-5 mt-3 text-capitalize fw-bold fs-4"
+          style="font-weight: 100"
+        >
+          --- Your favorite food delivery platform connecting customers with
+          restaurants and riders. ---
+        </p>
+        <!-- logo -->
+        <div class="row g-4 justify-content-between">
+          <div class="col-md-2 mb-4 text-start">
+            <div
+              class="bg-white fw-bold rounded-circle d-flex justify-content-center align-items-center"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="images/footer.png"
+                class="rounded-circle mt-3"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+          </div>
+          <!-- quick links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">Quick Links</h6>
+
+            <p class="mb-3">
+              <a href="#" class="text-white text-decoration-none fs-4">Home</a>
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-white text-decoration-none fs-4">About</a>
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Order Now</a
+              >
+            </p>
+          </div>
+          <!-- Restaurants -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Restaurants</h6>
+
+            <p class="mb-3">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Partner With Us</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Restaurant Dashboard</a
+              >
+            </p>
+          </div>
+          <!-- For Riders -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Riders</h6>
+
+            <p class="mb-3">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Become a Rider</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Rider Dashboard</a
+              >
+            </p>
+          </div>
+
+          <!-- Feedback & Support -->
+          <div class="col-md-2 mb-4">
+            <!-- <h6 class="fw-bold fs-3 mb-4"></h6> -->
+            <a href="../EnquiryForm/index.html" class="text-white text-decoration-none fs-4"
+                >Feedback & Support</a
+              >
+
+            <p class="mb-3">
+              <a href="../EnquiryForm/index.html" class="text-white text-decoration-none fs-4"
+                >Submit Feedback</a
+              >
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Help Center</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Contact Us</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <hr class="border-light opacity-50 my-3" />
+        <div>
+          <p class="fs-5 mb-0">© 2026 Cravings. All rights reserved.</p>
+          <div class="d-flex justify-content-end">
+            <a href="#" class="text-light text-decoration-none me-3 fs-4">Privacy Policy</a>
+            <a href="#" class="text-light text-decoration-none me-3 fs-4">Terms of Service</a>
+            <a href="#" class="text-light text-decoration-none me-3 fs-4">Site Map</a>
+          </div>
+        </div>
+
+      </div>
+    </footer> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

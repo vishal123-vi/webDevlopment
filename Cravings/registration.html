@@ -3,71 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- image -->
+    <!-- emage -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+  
     <style>
-      .login-card {
-        max-width: 400px;
+      .Register-card {
+        max-width: 500px;
         width: 100%;
-        border-radius: 12px;
       }
-      body{
-        background-image: url(image.png);
+      .form-control:focus {
+        border-color: red;
+        box-shadow: 0 0 5px red;
+      }
+
+       body{
+        background-image: url(images/registration.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
       }
+      
     </style>
   </head>
-  <body class="">
-    <div class="d-flex justify-content-start align-items-center vh-100 px-3 px-lg-5">
-      <div class="login-card p-xxl-5 shadow bg-light">
-        <h2 class="text-center text-danger">Welcome Back</h2>
-        <p class="text-center text-black">Login to your Cravings account</p>
-        <!-- Email -->
-        <div class="mb-3">
-          <label class="fw-bold">Email</label>
-          <input type="email" class="form-control text-light" placeholder="email " />
+  <body>
+    <div class="d-flex justify-content-center justify-content-lg-end align-items-center vh-100 px-3 px-lg-5">
+      <div class="Register-card p-xxl-5 shadow border bg-light">
+        <h1 class="text-center text-danger">Create Account</h1>
+        <p class="text-center">Join us as a Customer, Restaurant, or Rider</p>
+        <!-- Register as: -->
+        <label class="fw-bold">Register as:</label>
+        <div class="d-inline-flex gap-4 align-items-center  mt-3 text-capitalize">
+          <input type="radio" name="role" />customer
+          <input type="radio" name="role" />restaurant
+          <input type="radio" name="role" />rider
         </div>
-        <!-- password -->
-        <div class="mb-3">
-          <label class="fw-bold">password</label>
-
-          <input type="password" class="form-control" placeholder="password" />
+        <!-- forms -->
+        <div class="mt-3 text-capitalize">
+          <input
+            class="form-control border border-danger"
+            type="text"
+            placeholder="Enter  your full name"
+            required
+          />
         </div>
-        <!-- Remember Me forget me -->
-        <div
-          class="d-flex justify-content-between align-items-center mb-3 w-100"
-        >
-          <div><input type="checkbox" />Remember me</div>
-          <a class="text-danger text-decoration-none" href="#"
-            >Forget Password</a
+        <div class="mt-3">
+          <input
+            class="form-control border border-danger"
+            type="text"
+            placeholder="Enter your Email"
+            required=""
+          />
+        </div>
+        <div class="mt-3">
+          <input
+            class="form-control border border-danger"
+            type="text"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <input
+            class="form-control border border-danger"
+            type="text"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <input
+            class="form-control border border-danger"
+            type="text"
+            placeholder="Confirm Your Password"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <input class="" type="checkbox" />
+          <label>i agree to the</label>
+          <a href="#" class="text-danger text-decoration-underline link-danger"
+            >terms and conditions.</a
           >
         </div>
-        <!-- Button -->
-        <button class="btn text-bg-danger w-100">Login</button>
-        <!-- footer -->
-        <p class="text-center mt-3 mb-0">Don't have an account?</p>
-        <div class="text-center mt-3 mb-0">
-          <a class="text-danger text-decoration-none" href="#"
-            >Create an account</a
-          >
+        <button class="bg-danger w-100 mt-3 form-control">Register</button>
+        <div class="text-center">
+          <label class="mt-3">Already Registered?</label>
+          <label class="text-danger">terms and conditions</label>
         </div>
       </div>
     </div>
 
-     <!-- footer -->
+    <!-- footer -->
     <footer class="bg-dark text-white pt-5 pb-4 mt-5">
       <div class="container">
         <p class="text-center mb-5 mt-3 text-capitalize fs-5 fw-light">
@@ -129,7 +166,6 @@
         </div>
       </div>
     </footer>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
