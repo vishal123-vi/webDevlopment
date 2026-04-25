@@ -1,0 +1,13 @@
+ /* Tablet */
+  @media (max-width: 992px) {
+    .box {
+      width: 50%;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 576px) {
+    .box {
+      width: 100%;
+    }
+}
