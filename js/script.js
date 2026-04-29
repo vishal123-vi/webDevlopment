@@ -8,6 +8,7 @@ let a=[24,58,68,56,23,35,26,278,345,7]
 //     console.log(a[i]);
 // }
 
+
 // while loop
 
 // let i=0;
