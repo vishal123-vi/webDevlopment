@@ -6,14 +6,12 @@
 //   console.log("negative Integer");
 // }
 
-console.log("question no.2")
-let age=10;
-if(age<20)
-{
-    console.log("not eligible")
-}
-else{
-    console.log("eligible")
+console.log("question no.2");
+let age = 10;
+if (age < 20) {
+  console.log("not eligible");
+} else {
+  console.log("eligible");
 }
 
 // let  n=13;
@@ -43,7 +41,6 @@ else{
 
 // }
 
-
 // let usr = "abcd"
 // let pass="12345"
 // if(user === "abcd" && pass==="12345")
@@ -55,16 +52,37 @@ else{
 //     console.log("not login")
 // }
 
-//  short hand 
+//  short hand
 
-let a=2, b=6;
-console.log(a>2 ||b<3);
+let a = 2,
+  b = 6;
+console.log(a > 2 || b < 3);
 let data;
-let name="";
-data = name || "n/A"
+let name = "";
+data = name || "n/A";
 console.log(data);
 
-
 // example
-let x=20;
-console.log(x>10 && y<5);
+let x = 20;
+console.log(x > 10 && y < 5);
+
+// switch
+let choice = 1;
+let choice;
+switch (choice) {
+  case 1: {
+    console.log("Tea");
+    break;
+  }
+  case 2: {
+    console.log("Coffee");
+    break;
+  }
+  case 3: {
+    console.log("lassi");
+    break;
+  }
+  default: {
+    console.log("panni");
+  }  
+}
