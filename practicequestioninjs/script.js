@@ -5,12 +5,12 @@ for(var i=1;i<=5;i++)
     console.log(i);
 }
 // 2.   Print numbers from  1  to  10   using a for loop.  
-
 console.log("question no.2")
 for(var i=1;i<=10;i++)
 {
     console.log(i);
 }
+
 // 3.   Print numbers from  10  to 1 (reverse counting ) .   
 console.log("question no.3")
 for(var i=10;i>=1;i--)
@@ -77,5 +77,3 @@ for(var i=1;i<=10;i++)
         console.log(i)
     }
 }
-
-
