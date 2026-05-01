@@ -11,7 +11,3 @@ let c=sum(a,b);
 console.log(c);
 
 console.log("q2");
-
-
-
-
