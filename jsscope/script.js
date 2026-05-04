@@ -19,7 +19,7 @@ showcall(); //function call
 
 // 3.Create a function and declare a local variable
 // using var, then print it inside the function.
-// console.log("question no.3");
+console.log("question no.3");
 // function class(){
 //     var teacher="hello vishal";
 //     console.log(teacher);
@@ -36,6 +36,13 @@ console.log(teacherName); // Error
 
 // 4.Try to access a local variable outside the
 // function and observe the error.
+console.log("question no.4");
+function test() {
+  let x = 50; //local variable
+  console.log(x); //inside function
+}
+test();
+console.log(x); // outside function
 
 // 5.Create a function and declare a variable inside
 // an if block using let, then print it inside the
