@@ -1,0 +1,44 @@
+// let arr = [21, 23, 234, 24,45,12,123];
+// for (var i = 0; i < 7; i++) {
+//   console.log(arr[i]);
+// }
+// console.log(arr);
+// arr[2] = arr[2]+10;
+// console.log(arr);
+// arr=[];
+// console.log(arr);
+
+// let arr = [12, 23, 34, 45, 56, 67, 78, 89, 90];
+// console.log(arr);
+// arr.push(99);
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// arr.unshift(11);
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+// console.log(arr.at(4));
+
+// console.log(arr.indexOf(56));
+
+// console.log(arr.includes(12));
+// console.log(arr.indexOf(12));
+
+// let unar = [56, 23, 89, 45, 67, 34, 12, 90, 87, 45, 98];
+// console.log(unar);
+// unar.sort();
+// console.log(unar);
+
+// unar.reverse();
+// console.log(unar);
+
+let arr = [21, 23, 234, 24, 45, 12, 123];
+for (var i = 0; i < 7; i++) {
+  console.log(arr[i]);
+}
+console.log("");
+
+ar.forEach((element) => {
+  console.log(element);
+});

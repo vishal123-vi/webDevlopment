@@ -13,17 +13,17 @@ function Submit() {
   document.getElementById("dataCard").classList.add("divShow");
 }
 
-function clearForm() {
-  document.getElementById("fullName").value = "";
-  document.getElementById("city").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("password").value = "";
+// function clearForm() {
+//   document.getElementById("fullName").value = "";
+//   document.getElementById("city").value = "";
+//   document.getElementById("email").value = "";
+//   document.getElementById("password").value = "";
 
-  document.getElementById("myData").innerText = "";
-  document.getElementById("myData2").innerText = "";
-  document.getElementById("myData3").innerText = "";
-  document.getElementById("myData4").innerText = "";
+//   document.getElementById("myData").innerText = "";
+//   document.getElementById("myData2").innerText = "";
+//   document.getElementById("myData3").innerText = "";
+//   document.getElementById("myData4").innerText = "";
 
-  document.getElementById("dataCard").classList.remove("divShow");
-  document.getElementById("dataCard").classList.add("divHide");
-}
+//   document.getElementById("dataCard").classList.remove("divShow");
+//   document.getElementById("dataCard").classList.add("divHide");
+// }
