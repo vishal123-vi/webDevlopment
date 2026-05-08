@@ -1,8 +1,8 @@
-let body = document.querySelector("body")
 document.getElementById("bgColor").addEventListener("input", ChangeColor);
 function ChangeColor() {
   const color = document.getElementById("bgColor").value;
   document.getElementById("changeColor").style.backgroundColor = color;
+  
 }
 
 document.getElementById("headingColor").addEventListener("input", ChangeColor1);
@@ -17,6 +17,6 @@ function ChangeColor2() {
   document.getElementById("para").style.color = color;
 }
 
-function reset(){
-    window.location.reload();
+function reset() {
+  window.location.reload();
 }
