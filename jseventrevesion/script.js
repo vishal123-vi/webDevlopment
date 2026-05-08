@@ -1,3 +1,4 @@
+let body = document.querySelector("body")
 document.getElementById("bgColor").addEventListener("input", ChangeColor);
 function ChangeColor() {
   const color = document.getElementById("bgColor").value;
