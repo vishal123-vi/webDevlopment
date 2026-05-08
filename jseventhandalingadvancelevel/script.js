@@ -19,3 +19,4 @@ function fillRedColor() {
 function fillWhiteColor() {
   document.getElementById("bulb").style.backgroundColor = "white";
 }
+
