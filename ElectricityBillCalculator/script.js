@@ -11,7 +11,6 @@ function calculate() {
   } else {
     bill = 50 * 0.5 + 150 * 0.75 + 250 * 1.2 + (unit - 450) * 1.5;
   }
-
   const surcharge = bill * 0.2;
   const total = bill + surcharge;
   document.getElementById("total").innerText = total;
