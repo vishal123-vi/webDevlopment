@@ -6,6 +6,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
   const tipPerPerson = (bill * ser) / pc;
 
+
 //   console.log(tipPerPerson);
   document.getElementById("billAmount").value="";
   document.getElementById("serviceLevel").value="";
