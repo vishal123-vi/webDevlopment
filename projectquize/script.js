@@ -20,7 +20,6 @@ const quizqata = [
     ],
     correct: 1,
   },
-
   {
     question: "JavaScript ka use kis liye hota hai?",
     options: [
