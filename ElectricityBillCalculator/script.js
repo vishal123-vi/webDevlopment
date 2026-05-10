@@ -1,5 +1,6 @@
 function calculate() {
   const unit = Number(document.getElementById("units").value);
+  
 
   let bill = 0;
   if (unit <= 50) {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electricity Bill Calculator</title>
+    <title>Travel Bill Calculator</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,19 +11,43 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-light">
-    <div
+  <body>
+    <form
+      class="container d-flex justify-content-center align-content-center vh-100 mb-3"
+    >
+      <div class="card p-4 shadow w-50 h-50">
+        <h1 class="text-center mb-5">Travel Bill Calculator</h1>
+        <label class="text-dark fw-bold mb-3">Kilometers</label>
+        <input
+          type="number"
+          name="Kilometer"
+          placeholder="Enter the Kilometer"
+          id="Kilometer"
+          class="form-control"
+        />
+        <button
+          class="btn btn-primary rounded-pill shadow fw-bold mt-3"
+          id="submit"
+        >
+          Calculate Bill
+        </button>
+
+        <h1 id="total"></h1>
+      </div>
+    </form>
+
+    <!-- <form
       class="container d-flex justify-content-center align-items-center vh-100"
     >
       <div class="card p-4 shadow w-50 h-50">
-        <h2 class="text-center mb-5">Electricity Bill Calculator</h2>
+        <h2 class="text-center mb-5">Travel Bill Calculator</h2>
 
-        <label class="form-label fw-bold mb-3">Units</label>
+        <label class="form-label fw-bold mb-3">Kilometers </label>
         <input
           type="number"
-          id="units"
+          id="Kilometerscalculator"
           class="form-control mb-3"
-          placeholder="Enter Units"
+          placeholder="Enter Kilometers "
           min="0"
         />
 
@@ -32,26 +56,16 @@
           onclick="calculate()"
           id="submit"
         >
-          Calculate
+          Calculate Bill
         </button>
         <button class="btn btn-danger w-100" onclick="clearData()">
           Clear
         </button>
 
-        <div class="card mt-4 p-3 d-none" id="results">
-          <!-- <h5 class="mb-3">Bill Details</h5>
-          <p id="slab1"></p>
-          <p id="slab2"></p>
-          <p id="slab3"></p>
-          <p id="slab4"></p>
-          <hr /> -->
-          <h6 id="subtotal"></h6>
-          <h6 id="surcharge"></h6>
-          <h1>total Electricity Bill:</h1>
-          <h4 id="total" class="text-success mt-2"></h4>
-        </div>
+        <h1>total</h1>
+        <h2 id="totalbill"></h2>
       </div>
-    </div>
+    </form> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
