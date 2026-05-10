@@ -4,7 +4,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
   const rate = 11;
 
   const totalbill = Kilometer * rate;
-
   // console.log(totalbill);
   document.getElementById("Kilometer").value = "";
   document.getElementById("total").innerText = totalbill;
