@@ -1,6 +1,9 @@
 function calculate() {
   const unit = Number(document.getElementById("units").value);
   
+const billrate =11;
+const calculatebill = (unit*billrate)+"20%";
+console.log(calculatebill);
 
   let bill = 0;
   if (unit <= 50) {

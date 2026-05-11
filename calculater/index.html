@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+     <style>
+    body {
+      background-image: url(image.png);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+  </head>
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100"
+  >
+    <div class="card border-5 rounded-5 p-3 shadow w-25">
+      <!-- Display -->
+      <div
+        class="bg-success-subtle rounded-4 d-flex justify-content-end align-items-center fs-1 fw-bold p-5 mb-3 h-50 id="text"
+      >
+        0
+      </div>
+
+      <!-- Row 1 -->
+      <div class="row g-3 mb-2">
+        <div class="col-3">
+          <button
+            class="shadow btn btn-light fs-4 bg-danger rounded-pill w-100 p-3"
+            onclick="calculate('AC')"
+          >
+            AC
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            class="shadow btn btn-light fs-4  rounded-pill w-100 p-3"
+            onclick="calculate('C')"
+          >
+            C
+          </button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('%')">%</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn bg-warning fs-4  rounded-pill w-100 p-3" onclick="calculate('/')">
+            /
+          </button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('7')">7</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('8')">8</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('9')">9</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn bg-warning fs-4  rounded-pill w-100 p-3" onclick="calculate('*')">*</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('4')">4</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('5')">5</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('6')">6</button>
+        </div>
+        <div class="col-3">
+          <button class="shadow btn bg-warning fs-2  rounded-pill w-100 p-3" onclick="calculate('-')">-</button>
+        </div>
+         <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('1')">1</button>
+        </div>
+         <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('2')">2</button>
+        </div>
+         <div class="col-3">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-3" onclick="calculate('3')">3</button>
+        </div>
+         <div class="col-3">
+          <button class="shadow btn bg-warning fs-4  rounded-pill w-100 p-3" onclick="calculate('+')">+</button>
+        </div>
+         <div class="col-4">
+          <button class="shadow btn btn-light fs-4  rounded-pill w-100 p-4" onclick="calculate('0')">0</button>
+        </div>
+         <div class="col-4">
+          <button class="shadow btn btn-light fs-2  rounded-pill w-100 p-4" onclick="calculate('.')">.</button>
+        </div>
+         <div class="col-4">
+          <button class="shadow btn btn-success fs-4  rounded-pill w-100 p-4" onclick="calculate('=')">= </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
