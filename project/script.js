@@ -23,6 +23,7 @@ function Calculate(data) {
     equation.innerText = equation.innerText + data;
   }
 }
+
 document.addEventListener("keydown", function (event) {
   const key = event.key;
   if (key >= "0" && key <= "9") {
