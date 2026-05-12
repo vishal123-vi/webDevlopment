@@ -1,5 +1,5 @@
 document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
+  event.preventDefault();// 
   const bill = document.getElementById("billAmount").value;
   const ser = document.getElementById("serviceLevel").value;
   const pc = document.getElementById("peoplecount").value;

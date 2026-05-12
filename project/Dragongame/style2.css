@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: red;
+}
+.gameContainer {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100vh;
+}
+.dino {
+  background-image: url(../image/dragon.jpeg);
+  background-size: cover;
+  width: 213px;
+  height: 150px;
+  position: absolute;
+  bottom: 35px;
+}
+.obstacle {
+  background-image: url(dragon.png);
+  width: 350px;
+  height: 250px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 44vw;
+}
