@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body {
+/* body {
   background-color: red;
-}
+} */
 .gameContainer {
   background-image: url();
   background-repeat: no-repeat;
