@@ -16,4 +16,6 @@ function submit() {
   if (!/^[6-9]\d{9}$/.test(em)) {
     document.getElementById("emailError").innerText = "Invalid Phone";
   }
+
+  
 }
