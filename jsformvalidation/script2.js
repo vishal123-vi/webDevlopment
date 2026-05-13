@@ -7,15 +7,13 @@ function submit() {
     element.innerText = "";
   });
   if (!/^[A-Za-z\s]+$/.test(na)) {
-    document.getElementById("nameErrar").innerText = "invalid name";
+    document.getElementById("nameError").innerText = "invalid name";
   }
-  if (!/^[A-Za-z\.\_\d]+@gmail.com$/.test(ph)) {
-    document.getElementById("phoneError").innerText = "Invalid Email";
-  }
-
-  if (!/^[6-9]\d{9}$/.test(em)) {
-    document.getElementById("emailError").innerText = "Invalid Phone";
+   if (!/^[A-Za-z\.\_\d]+@gmail.com$/.test(em)) {
+    document.getElementById("emailError").innerText = "Invalid Email";
   }
 
-  
+  if (!/^[6-9]\d{9}$/.test(ph)) {
+    document.getElementById("phoneError").innerText = "Invalid Phone";
+  }
 }
