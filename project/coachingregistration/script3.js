@@ -170,7 +170,7 @@ function validateData(data) {
     }
   }
 
-  // Validate Gender
+  // Gender
   if (!data.gender || data.gender.trim() === "") {
     document.getElementById("dobError").innerText = "Please select your gender";
     isValid = false;
@@ -263,6 +263,6 @@ function validateData(data) {
   if (!data.hearAbout || data.hearAbout.trim() === "") {
     document.getElementById("hearAboutError").innerText = "Select an option";
     isValid = false;
-  }FFFfff
+  }
   return isValid;
 }
