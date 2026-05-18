@@ -3,7 +3,6 @@ document.getElementById("passform").addEventListener("submit", (event) => {
   const siteName = document.getElementById("siteName").value.trim();
   const userNmae = document.getElementById("userNmae").value.trim();
   const password = document.getElementById("password").value;
-
   const packet = {
     siteName: siteName,
     userNmae: userNmae,
