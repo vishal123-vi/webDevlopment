@@ -33,7 +33,6 @@ function sum(a, b) {
 
   return x + y;
 }
-
 willDoSomething(5, 6, sum);
 
 willDoSomething(5, 6, (r, s) => {
