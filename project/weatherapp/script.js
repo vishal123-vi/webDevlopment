@@ -9,8 +9,18 @@ async function getWeather() {
   const data = await response.json();
 
   const temperature = data.main.temp - 273.15;
+  const humidity = data?.main?.humidity ?? null;
+  const windSpeed = data?.wind?.speed ?? null; // in m/s
 
   document.getElementById("Temperature").innerText = temperature.toFixed(2);
+
+  const humEl = document.getElementById("Humidity");
+  if (humEl) humEl.innerText = humidity !== null ? `${humidity}%` : "--";
+
+  const windEl = document.getElementById("Wind");
+  if (windEl)
+    windEl.innerText =
+      windSpeed !== null ? `${windSpeed.toFixed(2)} m/s` : "--";
 }
 
 async function getGeoLocation(city) {
@@ -28,5 +38,5 @@ async function getGeoLocation(city) {
 }
 
 // wire the button to call getWeather (keeps your logic intact)
-const btn = document.getElementById('getWeatherBtn');
-if (btn) btn.addEventListener('click', getWeather);
+const btn = document.getElementById("getWeatherBtn");
+if (btn) btn.addEventListener("click", getWeather);
