@@ -14,23 +14,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
- <style>
-  body {
+  <style>
+    /* body {
   background-image: url(image/image.png);
   background-size: cover;
   background-position: center;
-}
- </style>
+} */
+  </style>
 
   <body
-    class="bg-warning-subtle d-flex justify-content-center align-items-center vh-100"
+    class="d-flex justify-content-center align-items-center vh-100"
+    style="
+      background: linear-gradient(
+        rgba(15, 23, 42, 0.9),
+        rgba(17, 24, 39, 0.9),
+        rgba(30, 58, 138, 0.9)
+      );
+      background-size: cover;
+      background-position: center;
+    "
   >
     <div class="container">
       <div
-        class="card shadow-lg border-0 rounded-4 p-4 mx-auto"
-        style="max-width: 420px"
+        class="card shadow-lg border-0 rounded-5 p-4 mx-auto"
+        style="max-width: 600px"
       >
-        <h2 class="text-center mb-4 fw-bold">Currency Converter</h2>
+        <h2 class="text-center mb-4 fw-bold">
+          <i class="fa-solid fa-coins text-info"></i> Currency Converter
+        </h2>
 
         <form>
           <!-- Amount -->
@@ -92,14 +103,14 @@
           </div>
 
           <!-- Button -->
-          <button class="btn btn-primary w-100 py-2 fs-5 rounded-3">
-            Get Exchange Rate
+          <button class="btn btn-info w-100 py-3 fs-5 rounded-4 fw-bold shadow">
+            <i class="fa-solid fa-bolt me-2"></i> Get Exchange Rate
           </button>
         </form>
       </div>
     </div>
 
-    <script src="codes.js"></script>
-    <script src="app.js"></script>
+    <script src="code.js"></script>
+    <script src="style.js"></script>
   </body>
 </html>
