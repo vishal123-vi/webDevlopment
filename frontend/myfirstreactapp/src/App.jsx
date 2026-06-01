@@ -15,12 +15,12 @@ function App() {
       <main className="container py-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<Product />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/Contact-Us" element={<ContactUs />} />
+          <Route path="/Product"element={<Product/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          
         </Routes>
       </main>
       <Footer />
