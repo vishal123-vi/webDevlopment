@@ -1,8 +1,21 @@
+#background-color {
+  background-color: blue;
+}
+
 a {
   text-decoration: none !important;
 }
 
-a:hover{
-   text-decoration: underline !important;
-
+a:hover {
+  text-decoration: underline !important;
 }
+#forget:hover {
+  text-decoration: underline !important;
+}
+/* #loginimg {
+  background-image: url("images/login.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+} */

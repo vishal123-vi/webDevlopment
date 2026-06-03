@@ -1,4 +1,5 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -9,21 +10,30 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 function App() {
+  const [dark, setDark] = useState(false);
+
   return (
     <BrowserRouter>
-      <Header />
-      <main className="container py-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/Contact-Us" element={<ContactUs />} />
-          <Route path="/Product"element={<Product/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          
-        </Routes>
-      </main>
-      <Footer />
+      <div
+        style={{
+          backgroundColor: dark ? "black" : "white",
+          color: dark ? "white" : "black",
+          minHeight: "100vh",
+        }}
+      >
+        <Header dark={dark} setDark={setDark} />
+        <main className="container py-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/Contact-Us" element={<ContactUs />} />
+            <Route path="/Product" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
