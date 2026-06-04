@@ -3,16 +3,10 @@ import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Login() {
-
-
-  
   return (
     <>
       {/* login */}
-      <div
-        className=" align-items-center justify-content-center vh-100 "
-        id="loginimg"
-      >
+      <div className=" align-items-center justify-content-center vh-100 ">
         <div
           className=" card bg-white p-4 shadow-lg rounded-3 mt-3"
           style={{ width: "420px" }}

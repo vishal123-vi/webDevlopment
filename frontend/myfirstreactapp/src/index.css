@@ -19,3 +19,13 @@ a:hover {
   background-repeat: no-repeat;
   height: 100vh;
 } */
+
+#footercolor{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footercolor:hover {
+  color: orange !important;
+}
