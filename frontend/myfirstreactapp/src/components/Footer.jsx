@@ -21,17 +21,17 @@ function Footer() {
               <h5>Quick Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-light text-decoration-none">
+                  <Link to="/about" className="text-light text-decoration-none vishal">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/order" className="text-light text-decoration-none">
+                  <Link to="/order" className="text-light text-decoration-none vishal">
                     Order Now
                   </Link>
                 </li>
@@ -43,12 +43,12 @@ function Footer() {
               <h5>For Restaurants</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Partner With Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Restaurant Dashboard
                   </Link>
                 </li>
@@ -60,12 +60,12 @@ function Footer() {
               <h5>For Riders</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Become a Rider
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Rider Dashboard
                   </Link>
                 </li>
@@ -77,17 +77,17 @@ function Footer() {
               <h5>Feedback & Support</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Submit Feedback
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Help Center
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-light text-decoration-none">
+                  <Link to="/" className="text-light text-decoration-none vishal">
                     Contact Us
                   </Link>
                 </li>
@@ -105,19 +105,19 @@ function Footer() {
             <div>
               <Link
                 to="/privacy"
-                className="text-light text-decoration-none me-3"
+                className="text-light text-decoration-none vishal me-3"
               >
                 Privacy Policy
               </Link>
 
               <Link
                 to="/terms"
-                className="text-light text-decoration-none me-3"
+                className="text-light text-decoration-none vishal me-3"
               >
                 Terms of Service
               </Link>
 
-              <Link to="/sitemap" className="text-light text-decoration-none">
+              <Link to="/sitemap" className="text-light text-decoration-none vishal">
                 Site Map
               </Link>
             </div>
