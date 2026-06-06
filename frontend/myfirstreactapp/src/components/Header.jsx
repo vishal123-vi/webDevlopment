@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
-import logoRicr from "../assets/logoricr.png";
+import logoRicr from "../assets/hero.png";
 
 function Header({ dark, setDark }) {
   return (
@@ -14,7 +14,7 @@ function Header({ dark, setDark }) {
               <img
                 src={logoRicr}
                 alt="Logo"
-                style={{ height: "48px", width: "auto" }} 
+                style={{ height: "45px", width: "auto" }} 
               
                  />
 

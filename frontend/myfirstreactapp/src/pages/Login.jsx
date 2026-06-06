@@ -1,14 +1,12 @@
 import { FaEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import loginpage from "../assets/login.png";
 function Login() {
   return (
     <>
-      {/* login */}
-      <div className=" align-items-center justify-content-center vh-100  ">
+      <div>
         <div
-          className=" card bg-white p-4 shadow-lg rounded-3 mt-3"
-          style={{ width: "420px" }}
+          className="card  bg-opacity-90 p-4 bg-white shadow-lg rounded-4"
+          style={{ width: "420px",}}
         >
           <h1 className="text-danger text-center fw-bold">Welcome Back</h1>
           <p className="text-center text- text-muted">
