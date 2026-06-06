@@ -1,10 +1,26 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 function Register() {
+  const [role, setRole] = useState("Customer");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [agree, setAgree] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ role, name, email, phone, password, confirmPassword, agree });
+  };
+
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex align-items-center justify-content-center  ">
         <div
-          className=" border p-2 mt-5 bg-light shadow rounded"
-          style={{ width: "420px" }}
+          className="card bg-opacity-90 p-4 bg-white shadow-lg rounded-4 "
+          style={{ width: "420px", margin: "40px auto" }}
         >
           <h2 className="text-center text-danger">Create Account</h2>
           <p className="text-center text-muted">
@@ -49,43 +65,58 @@ function Register() {
             </div>
           </div>
           <br />
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               name="UserName"
               placeholder="Enter your full name"
               className=" form-control"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
 
             <input
-              type="Email"
-              name="UserName"
+              type="email"
+              name="email"
               placeholder="Enter your Email"
               className=" form-control mt-3"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
 
             <input
-              type="number"
-              name="UserName"
+              type="tel"
+              name="phone"
               placeholder="Enter your phone number"
               className=" form-control mt-3"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
             />
             <input
               type="password"
               name="password"
               placeholder="Enter your password"
               className=" form-control mt-3"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <input
               type="password"
-              name="conformpassword"
-              placeholder="Enter your conform  password"
+              name="confirmPassword"
+              placeholder="Confirm your password"
               className=" form-control mt-3"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <div>
-              <input type="radio" className="me-2" />
-              <label className="test-white">
-                I agree to the terms and conditions.
+              <input
+                type="checkbox"
+                className="me-2"
+                checked={agree}
+                onChange={(e) => setAgree(e.target.checked)}
+              />
+              <label>
+                I agree to the <span className="text-danger hover-line text-primary ">terms and conditions.</span>
               </label>
             </div>
             <div>
@@ -93,6 +124,11 @@ function Register() {
                 Register
               </button>
             </div>
+
+             <br />
+            <p>
+              Already registered?<Link to="/login"> Login here</Link>
+            </p>
           </form>
         </div>
       </div>
