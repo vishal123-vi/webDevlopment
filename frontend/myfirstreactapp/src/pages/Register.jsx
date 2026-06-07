@@ -9,7 +9,6 @@ function Register() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [agree, setAgree] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ role, name, email, phone, password, confirmPassword, agree });
