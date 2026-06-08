@@ -19,7 +19,7 @@ function Header({ dark, setDark }) {
                  />
 
               {/* navbar */}
-              <div className="d-flex gap-4" id="nav-link">
+              {/* <div className="d-flex gap-4" id="nav-link">
                 <Link to="/" className=" text-dark fw-semibold fs-5">
                   Home
                 </Link>
@@ -32,7 +32,7 @@ function Header({ dark, setDark }) {
                 <Link to="/Contact-Us" className="text-dark fw-semibold fs-5">
                   Contact Us
                 </Link>
-              </div>
+              </div> */}
               {/* Button*/}
               <div className="d-flex gap-2">
                 <button
@@ -49,7 +49,7 @@ function Header({ dark, setDark }) {
                     Login
                   </button>
                 </Link>
-                <Link to="/register">
+                <Link to="/Register">
                   <button className=" rounded-5 px-4 py-2 fs-5">
                     Register
                   </button>

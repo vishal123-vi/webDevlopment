@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import loginpage from "../assets/login.png";
 function Login() {
   const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
+  const [Password, setPassword] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log("email :", email);
-    console.log("password :", password);
+    console.log("Password :", Password);
   };
 
   return (
@@ -38,16 +38,16 @@ function Login() {
             </div>
 
             <div className="mb-3 position-relative">
-              <label htmlFor="password" className="form-label fw-bold">
+              <label htmlFor="Password" className="form-label fw-bold">
                 Password
               </label>
 
               <input
-                type="password"
+                type="Password"
                 placeholder="Enter your password"
                 className="form-control pe-5"
-                value={password}
-                onChange={(e) => setpassword(e.target.value)}
+                value={Password}
+                onChange={(e) => setPassword(e.target.value)}
               />
 
               <FaEye

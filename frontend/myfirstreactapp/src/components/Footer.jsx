@@ -31,7 +31,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/order" className="text-light text-decoration-none vishal">
+                  <Link to="/OrderNow" className="text-light text-decoration-none vishal">
                     Order Now
                   </Link>
                 </li>

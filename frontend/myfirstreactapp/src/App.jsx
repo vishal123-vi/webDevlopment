@@ -8,6 +8,7 @@ import Product from "./pages/Product";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import OrderNow from "./pages/OrderNow";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -30,6 +31,7 @@ function App() {
             <Route path="/Product" element={<Product />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/OrderNow" element= {<OrderNow/>}/>
           </Routes>
         </main>
         <Footer />
