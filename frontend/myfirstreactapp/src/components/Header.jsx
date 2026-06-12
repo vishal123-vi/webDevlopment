@@ -19,20 +19,20 @@ function Header({ dark, setDark }) {
                  />
 
               {/* navbar */}
-              {/* <div className="d-flex gap-4" id="nav-link">
-                <Link to="/" className=" text-dark fw-semibold fs-5">
+              <div className="d-flex gap-4" id="nav-link">
+                {/* <Link to="/" className=" text-dark fw-semibold fs-5">
                   Home
                 </Link>
                 <Link to="/about" className="text-dark fw-semibold fs-5">
                   About
-                </Link>
+                </Link> */}
                 <Link to="/Product" className="text-dark fw-semibold fs-5">
                   Product
                 </Link>
-                <Link to="/Contact-Us" className="text-dark fw-semibold fs-5">
+                {/* <Link to="/Contact-Us" className="text-dark fw-semibold fs-5">
                   Contact Us
-                </Link>
-              </div> */}
+                </Link> */}
+              </div>
               {/* Button*/}
               <div className="d-flex gap-2">
                 <button
